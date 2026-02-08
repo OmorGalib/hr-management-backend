@@ -43,7 +43,7 @@ class App {
   }
 
   private configureRoutes(): void {
-    this.app.use('/api', routes);
+    this.app.use('', routes);
 
     this.app.use((req: Request, res: Response) => {
       const response: ApiResponse<null> = {
