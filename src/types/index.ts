@@ -49,7 +49,7 @@ export interface EmployeeCreateDTO {
 }
 
 export interface EmployeeUpdateDTO extends Partial<EmployeeCreateDTO> {
-  photo_path?: string;
+  photo_path?: string | null;
 }
 
 export interface EmployeeFilters {
